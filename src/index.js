@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 const scoreDisplay = document.getElementById('score-display')
 const questionDisplay = document.getElementById('question-display')
 
-// questions
-const questions = [
+// words
+const words = [
   {
     correct: 2,
     option: ['expression', 'argument', 'syntax'],
@@ -422,10 +422,20 @@ const questions = [
 //   },
 ]
 
+// questions
+function shuffle(words) {
+    for (let i = words.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let temp = words[i];
+      words[i] = words[j];
+      words[j] = temp;
+    }
+    return words;
+  }
+const questions = (shuffle(words));
+
 let clicked = []
 let score = 0
-// word
-let word = questions[0]
 
 scoreDisplay.textContent = score
 
@@ -436,7 +446,7 @@ function populateQuestions() {
     questionBox.classList.add('question-box')
 
     const logoDisplay = document.createElement('h1')
-    logoDisplay.textContent = '✒'
+    logoDisplay.textContent = 'ß'
     questionBox.append(logoDisplay)
 
     question.quiz.forEach((tip) => {

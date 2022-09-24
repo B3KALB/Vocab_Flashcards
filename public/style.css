@@ -37,13 +37,13 @@
     padding: 10px 20px;
     border-radius: 20px;
     border: none;
-    background-color:rgb(75, 134, 111);
-    color: white;
+    background-color: rgb(24, 248, 248);
+    color: rgb(0, 0, 0);
   }
   
   button:disabled {
     background-color: darkgray;
-    color: rgb(136, 134, 134);
+    color: rgb(0, 0, 0);
   }
   
   .back-button {
@@ -69,14 +69,14 @@
   }
   
   .answer-display.correct {
-    color: rgb(211, 211, 117);
+    color: rgb(53, 255, 22);
   }
   
   .answer-display.wrong {
-    color: rgb(211, 134, 117);
+    color: rgb(255, 61, 174);
   }
   
   .question-box h1 {
     text-align: left;
-    color:rgb(117, 136, 211)
+    color:rgba(161, 0, 235, 0.554)
   }
