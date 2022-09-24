@@ -228,7 +228,7 @@ const words = [
   {
     correct: 2,
     option: ['expression', 'loop', 'recursion'],
-    quiz:['A part of a program that can run repeatedly manipulates.']
+    quiz:['A part of a program that can run repeatedly.']
   },
   {
     correct: 1,

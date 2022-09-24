@@ -10,12 +10,23 @@
   <div id="app" class="app">
 
     <div class="question-area">
-        <h1>Welcome to CS1101 Vocabulary</h1>
-        <h3>Your score is: <span id="score-display"></span></h3>
+        <h1 class="h1">Welcome to CS1101 Vocabulary</h1>
         <div class="questions" id="question-display"></div>
+        <h3>Your score is: <span id="score-display"></span></h3>
+        <button class="try-again" onClick="history.go(0);">Try again?</button>
       </div>
 
   </div>
-  <!-- <script src="app.js"></script> === Alt way to bring in js file -->
+  <!-- <script src="index.js"></script> === Alt way to bring in js file -->
+  <script>
+// if try again = scroll to top of page
+  if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+    } else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+    }
+    </script>
 </body>
 </html>
