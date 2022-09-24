@@ -43,11 +43,12 @@
   .question-button {
     display: flex;
     flex-direction: column;
+    width: auto;
   }
   
   button {
-    margin: 5px;
-    padding: 10px 20px;
+    margin: 3px;
+    padding: 5px 7px;
     border-radius: 20px;
     border: none;
     background-color: rgb(24, 248, 248);
